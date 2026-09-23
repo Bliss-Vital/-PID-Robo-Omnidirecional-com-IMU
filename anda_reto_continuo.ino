@@ -9,18 +9,6 @@
  * (O comando 's' pelo Serial ainda existe como freio de emergencia
  *  de bancada, mas NAO e necessario para o funcionamento normal.)
  *
- * Herda tudo que validamos:
- *   - IMU na orientacao padrao (sem inversao de eixos)
- *   - I2C a 100 kHz + deteccao/reinicializacao de IMU congelada
- *   - PWM so reaplicado quando muda (evita "picotar" o sinal)
- *   - relacao de hardware Rt -> yaw (RT_PARA_YAW_POSITIVO = -1)
- *
- * IMPORTANTE: Ly comeca em 0.75 (nao 0.40) porque testamos que 0.40
- * nao venceu o atrito do robo com o peso todo no chao (rodas so
- * "cantavam" sem deslocar). Ajuste aqui se precisar.
- *
- * >>> ROBO NO CHAO, em pista livre e longa o suficiente. <<<
- * >>> Ele vai andar reto ATE VOCE DESLIGAR. Planeje o espaco. <<<
  */
 
 // ===================== PARAMETROS DE SINTONIA (ajuste aqui) =====================
