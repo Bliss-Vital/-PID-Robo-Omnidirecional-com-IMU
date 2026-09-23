@@ -6,8 +6,6 @@
  * giro e calculada pela biblioteca PID_v1 (Brett Beauregard), em vez
  * do controle proporcional manual.
  *
- * Ganhos iniciais pedidos: Kp=0.3  Ki=0  Kd=0  (so proporcional)
- *
  * v4: corrige o SINAL do erro no PID (Setpoint=90, Input=girado),
  *     sobe o piso de velocidade, e imprime o PWM real aplicado.
  * v6: o robo girava para o lado oposto ao que a contagem esperava
