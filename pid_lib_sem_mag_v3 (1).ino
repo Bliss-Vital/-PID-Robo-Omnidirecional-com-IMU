@@ -17,8 +17,6 @@
  *   Input    = erro normalizado em [-180, 180]
  *   Output   = correcao -> vira Rt
  *
- * OBS: sem magnetometro o YAW deriva devagar. Bom para trajetos
- * curtos; em trajetos longos a direcao escorrega.
  *
  * Bibliotecas: FastIMU, MadgwickAHRS, PID_v1
  * Pinos IMU: SDA->GP16  SCL->GP17 | Serial 115200
