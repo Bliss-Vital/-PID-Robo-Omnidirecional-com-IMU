@@ -11,18 +11,6 @@
  * v6: o robo girava para o lado oposto ao que a contagem esperava
  *     (girado negativo). Adicionada a constante de hardware
  *     RT_PARA_YAW_POSITIVO (= -1 neste robo) e alerta automatico.
- * v5: IMU congelava quando os motores ligavam (ruido no I2C).
- *     -> I2C a 100 kHz, deteccao de dados congelados com
- *        reinicializacao automatica do sensor, e gyroZ bruto no debug.
- *
- * COMO O PID E USADO AQUI:
- *   Input    = quanto JA GIROU no segmento atual (em graus)
- *   Setpoint = 90 (o alvo e completar o segmento)
- *   -> erro interno da biblioteca = 90 - girado = quanto falta (positivo)
- *   Output   = velocidade de giro (0 a 1), com o SENTIDO aplicado depois
- * Isso mantem a mesma logica de "somar o quanto girou de verdade" que
- * corrigiu o bug anterior -- so a conversao erro->velocidade agora
- * passa pela biblioteca PID, nao por uma formula manual.
  *
  * ===== PARAMETROS DE SINTONIA (ajuste aqui, no topo) =====
  */
